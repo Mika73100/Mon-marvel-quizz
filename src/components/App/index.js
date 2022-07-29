@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route}  from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route }  from 'react-router-dom'
 import Header from '../Header'
 import Landing from '../Landing'
 import Footer from '../Footer/index'
@@ -12,10 +12,11 @@ import '../../App.css'
 
 function App() {
   return (
+    
   <Router>
     <Header />
       <Routes>
-            <Route  path='/landing'  element={<Landing />}/>
+            <Route exact path='/'  element={<Landing />}/>
             <Route  path='/welcome'  element={<Welcome />}/>
             <Route  path='/login'  element={<Login />}/>
             <Route  path='/signup'  element={<Signup />}/>
@@ -23,6 +24,9 @@ function App() {
       </Routes>
     <Footer />
   </Router>
+  
+  
+
   );
 }
 
