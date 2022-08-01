@@ -10,23 +10,26 @@ import ErrorPage from '../ErrorPage'
 import '../../App.css'
 
 
+
 function App() {
   return (
+
     
   <Router>
     <Header />
       <Routes>
             <Route exact path='/'  element={<Landing />}/>
-            <Route  path='/welcome'  element={<Welcome />}/>
-            <Route  path='/login'  element={<Login />}/>
-            <Route  path='/signup'  element={<Signup />}/>
-            <Route  path='/errorpage'  element={<ErrorPage />}/>
+            <Route  path='/Welcome'  element={<Welcome />}/>
+            <Route  path='/Login'  element={<Login />}/>
+            <Route  path='/Signup'  element={<Signup />}/>
+            <Route  path='/Errorpage'  element={<ErrorPage />}/>
       </Routes>
     <Footer />
   </Router>
-  
-  
 
+
+  
+  
   );
 }
 

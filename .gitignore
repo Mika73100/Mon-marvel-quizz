@@ -13,6 +13,7 @@
 
 # misc
 .DS_Store
+#ici je retrouve mon fichier envlocal qui est un fichier cacher, celui-ci permet de cacher sur gitHub ou sur des serveurs les liens comme la clées pour la connexion a ma base de données.
 .env.local
 .env.development.local
 .env.test.local
